@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="script.js"></script> -->
+        </head>
+
+<body style="margin: 0; padding: 0; box-sizing: border-box;">
+<div style=" width: 100%; height: 618px; display: flex; background-image: url('https://cdn.pixabay.com/photo/2018/01/12/10/19/fantasy-3077928_1280.jpg');">
+
+    <form style="width: 30%; height: 350px; margin: 4% auto; padding: 15px; margin-top: 150px;" action="Dashboard.html">
+        <h1 style="text-align: center; padding-bottom: 20px; color: rgb(51, 133, 228);">Login Page</h1>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">UserName</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary" onclick="goToAdmin()">Login</button>
+      </form>
+    </div>
+      <script>
+        function goToAdmin(){
+          window.location.href='/Dashboard.html';
+        }
+      </script>
+
+</body>
+
+</html>

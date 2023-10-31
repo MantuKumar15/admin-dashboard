@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminDashboard</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <link rel="stylesheet" href="style.css">
+
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <!-- Sidebar -->
+  <div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none; background-color: rgb(188, 202, 198); box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;" id="mySidebar">
+    <button onclick="w3_close()" class="w3-bar-item w3-large " style="height: 130px; background-color: rgb(29, 29, 61); color: white;"><i class="fa fa-graduation-cap" style="font-size: 40px;"></i> Admin</button>
+    <a href="#" class="w3-bar-item w3-button" onclick="goToHome1()"><i class="fa fa-home" style="font-size: 20px;"></i> Home </a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user" style="font-size: 20px;"> User Profile </i></a>
+    <a href="#" class="w3-bar-item w3-button"><i class="fa fa-address-book" style="font-size: 20px;"></i> Contact </a>
+    <a href="#" class="w3-bar-item w3-button" onclick="goToLogin()"><i class="fa fa-power-off" style="font-size: 20px;"></i> LogOut </a>
+  </div>
+
+  
+  <!-- Page Content -->
+  <div id="main" style="background-color: white; height: 618px;">
+  <div class="w3-teal container-css" style="height: 100px;">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()"><i class="fa fa-bars" style="font-size: 35px;"></i></button>
+    <div class="w3-container navbar">
+      <a href="https://www.linkedin.com/in/mantu-singh5138/" class="w3-bar-item w3-button"><i class="fa fa-linkedin-square" style="font-size: 30px;"></i></a>
+      <a href="https://github.com/MantuKumar15" class="w3-bar-item w3-button"><i class="fa fa-github" style="font-size: 30px;"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=100037453986869" class="w3-bar-item w3-button"><i class="fa fa-facebook-f" style="font-size: 30px;"></i></a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-bell" style="font-size: 30px;"></i></a>
+      <a style="color: rgb(83, 83, 83); font-size: 25px;">&#9553</a>
+      <a href="#" class="w3-bar-item w3-button"><i class="fa fa-user-circle-o" style="font-size: 40px;"></i></a>
+    </div>
+  </div>
+  
+
+  
+  
+  
+  <div class="w3-container section-box">
+    <button class="button-btn" type="button" onclick="goToAddUser()">Add User</button>
+    <table class="table table-bordered" style="text-align: center;">
+        <thead>
+          <tr>
+            <th style="background-color: rgb(210, 174, 245);" scope="col">SI. No.</th>
+            <th style="background-color: rgb(210, 174, 245);" scope="col">Full Name</th>
+            <th style="background-color: rgb(210, 174, 245);" scope="col">Email-Id</th>
+            <th style="background-color: rgb(210, 174, 245);" scope="col">Mobile No.</th>
+            <th style="background-color: rgb(210, 174, 245);" colspan="2">Action</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">1.</th>
+            <td >Mantu Kumar</td>
+            <td>mantusingh235@gmail.com</td>
+            <td>9122686007</td>
+            <td><a href="#" class="w3-bar-item w3-button" onclick="goToEdit()"><i class="fa fa-pencil" style="font-size: 20px; color: rgb(37, 37, 233); cursor: pointer"></i></a></td>
+            <td><a href="#" class="w3-bar-item w3-button"><i class="fa fa-remove" id="delete" onclick="Remove()" style="font-size: 20px; color: rgb(231, 40, 40); cursor: pointer;"></a></td>
+            
+           
+          </tr>
+          <tr>
+            <th scope="row">2.</th>
+            <td>Satish Kumar</td>
+            <td>satish324@gmail.com</td>
+            <td>3492929102</td>
+            <td><a href="#" class="w3-bar-item w3-button" onclick="goToEdit()"><i class="fa fa-pencil" style="font-size: 20px; color: rgb(37, 37, 233); cursor: pointer"></i></a></td>
+            <td><a href="#" class="w3-bar-item w3-button"><i class="fa fa-remove" id="delete" onclick="Remove()" style="font-size: 20px; color: rgb(231, 40, 40); cursor: pointer;"></a></td>
+          <tr>
+            <th scope="row">3.</th>
+            <td>Tinku Kumar</td>
+            <td>tinku3333@gmail.com</td>
+            <td>9168453288</td>
+            <td><a href="#" class="w3-bar-item w3-button" onclick="goToEdit()"><i class="fa fa-pencil" style="font-size: 20px; color: rgb(37, 37, 233); cursor: pointer"></i></a></td>
+            <td><a href="#" class="w3-bar-item w3-button"><i class="fa fa-remove" id="delete" onclick="Remove()" style="font-size: 20px; color: rgb(231, 40, 40); cursor: pointer;"></a></td>
+          </tr>
+
+          <tr>
+            <th scope="row">4.</th>
+            <td>Ajay Kumar</td>
+            <td>ajay4533@gmail.com</td>
+            <td>986845443</td>
+            <td><a href="#" class="w3-bar-item w3-button" onclick="goToEdit()"><i class="fa fa-pencil" style="font-size: 20px; color: rgb(37, 37, 233); cursor: pointer"></i></a></td>
+            <td><a href="#" class="w3-bar-item w3-button"><i class="fa fa-remove" id="delete" onclick="Remove()" style="font-size: 20px; color: rgb(231, 40, 40); cursor: pointer;"></a></td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+  </div>
+  
+
+</body>
+</html>

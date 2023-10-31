@@ -1,0 +1,56 @@
+
+.navbar{
+    display: flex;
+    float: right;
+    margin: 1% auto; 
+    
+}
+
+.container-css{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.section-box .button-btn{
+    background-color: rgb(24, 24, 243);
+    margin-top: 30px;
+    color: white;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    margin-bottom: 20px;
+
+
+}
+.section-box .button-btn:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+.section-box{
+    margin-top: 30px;
+    width: 80%;
+    display: inline-table;
+    float: inline;
+    margin-left: 120px;
+}
+
+.section-box1{
+    margin-top: 50px;
+    width: 70%;
+    display: inline-table;
+    float: inline;
+    margin-left: 170px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: 1px solid rgb(87, 149, 243); 
+    border-bottom-width: thick;
+}
+
+.section-box12{
+    margin-top: 50px;
+    width: 70%;
+    display: inline-table;
+    float: inline;
+    margin-left: 170px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border: 1px solid rgb(26, 231, 88); 
+    border-bottom-width: thick;
+}
